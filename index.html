@@ -17,6 +17,7 @@
     <main class="container">
 
         <section class="summary">
+            <!-- summary cards -->
 
             <div class="card income">
                 <h4>Income</h4>
@@ -32,64 +33,53 @@
             </div>
         </section>
 
+        <section class="grid">
+            <!--grid section-->
+            <section class="add-transaction">
+                <h2>Add Transaction</h2>
+                
+                <form id="transaction-form">
+                    <input type="number" id="amount" placeholder="Amount" required />
+
+                    <select id="type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+
+                    <select id="category" required>
+                        <option values="">Select Category</option>
+                        <option values="Food">Food</option>
+                        <option values="Travel">Travel</option>
+                        <option values="Shopping">Shopping</option>
+                        <option values="Bills">Bills</option>
+                        <option values="Others">Others</option>
+                    </select>
+
+                    <input type="date" id="date" required/>
+                    <input type="text" id="note" placeholder="description"/>
+
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </section>
+            <section class="Transactions">
+                <h2>Transactions</h2>
+                <ul id="transaction-list"></ul>
+            </section>
+
+        </section>
+
+        <!--charts-->
+        <section class="charts">
+            <h2>Analytics</h2>
+            <canvas id="expensechart"></canvas>
+        </section>
+
 
 
 
 
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
